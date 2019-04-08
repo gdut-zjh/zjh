@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(242, 242, 242);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* 上下页的箭头 */
+.arrows_box {
+  position: absolute;
+  top: 830px;
+  right: 100px;
+}
+.arrows {
+  border: solid rgb(186, 65, 89);
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+.arrows:hover {
+  border: solid rgb(255, 159, 75);
+  border-width: 0 10px 10px 0;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* 首页------------------------------------------------------ */
+.index_page {
+  position: relative;
+  /* background-image: url(images/首页.png);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 400px 0; */
+}
+
+.index_page .index_bg {
+  width: 1600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.index_page .title_box {
+  position: absolute;
+  left: 100px;
+  top: 600px;
+  width: 420px;
+  padding-left: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 20px;
+  border-left: 6px solid rgb(186, 65, 89);
+}
+
+.index_page .title {
+  margin-bottom: 20px;
+}
+
+.index_page .copyright {
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-left: 230px;
+}
+
+
+/* 第二页------------------------------------------------------ */
