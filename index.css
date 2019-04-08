@@ -40,11 +40,6 @@ body {
 /* 首页------------------------------------------------------ */
 .index_page {
   position: relative;
-  /* background-image: url(images/首页.png);
-  height: 800px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 400px 0; */
 }
 
 .index_page .index_bg {
@@ -58,7 +53,7 @@ body {
   position: absolute;
   left: 100px;
   top: 600px;
-  width: 420px;
+  width: 500px;
   padding-left: 40px;
   font-size: 40px;
   font-weight: 600;
