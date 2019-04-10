@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(242, 242, 242);
+  overflow: hidden;
 }
 
 * {
@@ -12,11 +12,6 @@ body {
 }
 
 /* 上下页的箭头 */
-.arrows_box {
-  position: absolute;
-  top: 830px;
-  right: 100px;
-}
 .arrows {
   border: solid rgb(186, 65, 89);
   border-width: 0 10px 10px 0;
@@ -24,22 +19,35 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+
 .arrows:hover {
   border: solid rgb(255, 159, 75);
   border-width: 0 10px 10px 0;
 }
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
 
+.left{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 /* 首页------------------------------------------------------ */
 .index_page {
   position: relative;
+  background-color: rgb(242, 242, 242);
 }
 
 .index_page .index_bg {
@@ -53,11 +61,11 @@ body {
   position: absolute;
   left: 100px;
   top: 600px;
-  width: 500px;
+  width: 800px;
   padding-left: 40px;
   font-size: 40px;
   font-weight: 600;
-  letter-spacing: 20px;
+  letter-spacing: 6px;
   border-left: 6px solid rgb(186, 65, 89);
 }
 
@@ -71,5 +79,199 @@ body {
   margin-left: 230px;
 }
 
+.index_page_arrows {
+  position: absolute;
+  top: 830px;
+  right: 100px;
+}
 
-/* 第二页------------------------------------------------------ */
+/* 第一页------------------------------------------------------ */
+.first_page_arrows{
+  position: absolute;
+  right: 50px;
+  top: 620px;
+}
+.first_page {
+  background-color: rgb(120, 80, 65);
+  padding: 100px;
+  overflow: hidden;
+}
+
+.first_page .box {
+  width: 1600px;
+  height: 730px;
+  background-color: rgb(242, 242, 242);
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+/* 中国70 content1 */
+.first_page .content1 {
+  position: relative;
+}
+
+.first_page .content1 .content_image {
+  position: absolute;
+  height: 650px;
+  opacity: 0.3;
+  border-radius: 50px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.first_page .content1 .content_text {
+  position: absolute;
+  top: 10px;
+  left: 570px;
+  width: 900px;
+  display: inline-block;
+  font-size: 34px;
+  color: rgb(120, 80, 65);
+}
+
+/* 笛子简介1 content2 */
+.first_page .content2 {
+  position: relative;
+}
+.first_page .content2 .content_image {
+  position: absolute;
+  height: 650px;
+  opacity: 0.3;
+  border-radius: 50px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.first_page .content2 .content_text {
+  position: absolute;
+  top: 10px;
+  left: 570px;
+  width: 900px;
+  display: inline-block;
+  font-size: 34px;
+  color: rgb(120, 80, 65);
+}
+/* 笛子简介2 content3 */
+.first_page .content3 {
+  position: relative;
+}
+.first_page .content3 .content_image {
+  position: absolute;
+  height: 650px;
+  opacity: 0.3;
+  border-radius: 50px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.first_page .content3 .content_text {
+  position: absolute;
+  top: 10px;
+  left: 570px;
+  width: 900px;
+  display: inline-block;
+  font-size: 34px;
+  color: rgb(120, 80, 65);
+}
+/* 笛子代表作 content4 */
+.first_page .content4 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1000px;
+}
+.first_page .content4 .content4_title{
+  color: rgb(120, 80, 65);
+  font-size: 40px;
+  text-align: center;
+}
+.first_page .content4 .item_box{
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
+}
+.first_page .content4 .item{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  margin: 0 auto;
+}
+.first_page .content4 .item:hover .wrap{
+  opacity: 1;
+}
+.first_page .content4 .wrap{
+  width: 200px;
+  height: 200px;    
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.first_page .content4 .item1{
+  background-image: url(images/牧笛.png);
+}
+.first_page .content4 .item2{
+  background-image: url(images/小放牛.png);
+}
+.first_page .content4 .item3{
+  background-image: url(images/牧民新歌.png);
+}
+.first_page .content4 .item4{
+  background-image: url(images/鹧鸪飞.png);
+}
+.first_page .content4 .item5{
+  background-image: url(images/黄莺亮翅.png);
+}
+.first_page .content4 .item6{
+  background-image: url(images/催马运粮.png);
+  font-size: 22px;
+}
+
+/* 广工大民乐团 content5 */
+.first_page .content5 {
+  position: relative;
+}
+.first_page .content5 .content_image {
+  position: absolute;
+  height: 650px;
+  opacity: 0.3;
+  border-radius: 50px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.first_page .content5 .content_text {
+  position: absolute;
+  top: 10px;
+  left: 570px;
+  width: 900px;
+  display: inline-block;
+  font-size: 27px;
+  color: rgb(120, 80, 65);
+}
+
+/* thank content6 */
+.first_page .content6 {
+  position: relative;
+  text-align: center;
+  color: rgb(120, 80, 65);
+  box-sizing: border-box;
+  padding-top: 170px;
+}
+.first_page .content6 .title{
+  font-size: 80px;
+  letter-spacing: 60px;
+}
+.first_page .content6 .text{
+  font-size: 40px;
+  margin-top: 30px;
+}
+
